@@ -82,7 +82,7 @@ function createScene(canvas, opts) {
   var MONO = 'ui-monospace, SFMono-Regular, Menlo, Consolas, "Courier New", monospace';
 
   // ---------------- palette hook (V3: colorful console palette) -----------
-  // V1 hologram-console look, but every semantic gets its own hue instead of a
+  // V1 console look, but every semantic gets its own hue instead of a
   // monochrome phosphor.  All colours resolve from this single table;
   // `opts.palette` may override any token and the resolved table is exposed as
   // `createScene.PALETTE`.  No VS Code chrome: this is the AGENT OPS console.
@@ -2845,7 +2845,7 @@ function createScene(canvas, opts) {
     ctx.globalCompositeOperation = "source-over";
     ctx.globalAlpha = 1;
 
-    // hologram base rings + rotating tick ring (reads as a 3D volume)
+    // base rings + rotating tick ring (reads as a 3D volume)
     ctx.strokeStyle = palA("blue", 0.26);
     ctx.lineWidth = Math.max(0.5, 0.7 * S);
     ctx.setLineDash([2 * S, 6 * S]);
@@ -3833,6 +3833,7 @@ function createScene(canvas, opts) {
     dispose: dispose
   };
 }
+
 
 
 

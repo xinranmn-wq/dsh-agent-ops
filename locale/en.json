@@ -1,6 +1,6 @@
 {
   "meta": {
     "title": "Agent Ops Dispatch Center",
-    "description": "Projects the live run of an AI agent onto a sci-fi dispatch-center HUD: tool calls, token streams, subagents and event logs, all visualized."
+    "description": "DeepSeek Harness (DSH) plugin for live AI agent run visualization: tool calls, token usage, subagents and event logs on an interactive memory cloud and card ring HUD."
   }
 }

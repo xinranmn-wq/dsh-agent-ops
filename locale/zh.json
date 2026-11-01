@@ -1,6 +1,6 @@
 {
   "meta": {
     "title": "Agent Ops 调度中心",
-    "description": "把 AI Agent 的运行过程实时投射成科幻调度中心仪表盘：工具调用、Token 流、子代理与事件日志全部可视化。"
+    "description": "DeepSeek Harness（DSH）的 AI Agent 运行可视化插件：实时展示工具调用、Token 消耗、子代理与事件日志，提供可交互记忆云与卡片环面板。"
   }
 }

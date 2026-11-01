@@ -1,5 +1,5 @@
-// ==== HUD (V3 — colorful V1 mission-control skin + memory interaction) ====
-// Full-screen Agent Ops overlay: V1 mission-control chrome (dense monospace,
+// ==== HUD (V3 — colorful V1 console skin + memory interaction) ====
+// Full-screen Agent Ops overlay: V1 console chrome (dense monospace,
 // corner brackets, big arc/network scene behind), repainted with a colorful
 // semantic palette, plus a pointer-interactive memory layer.
 // Concatenated after src/scene.js inside one factory scope, so `React`, `h` and
@@ -2654,4 +2654,5 @@ function AgentOpsOverlay(props) {
     ),
   );
 }
+
 
