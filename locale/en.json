@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Agent Ops Dispatch Center",
+    "description": "Projects the live run of an AI agent onto a sci-fi dispatch-center HUD: tool calls, token streams, subagents and event logs, all visualized."
+  }
+}

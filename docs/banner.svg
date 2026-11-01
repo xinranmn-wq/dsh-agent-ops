@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 300" width="1200" height="300">
+  <defs>
+    <radialGradient id="glow" cx="78%" cy="46%" r="62%">
+      <stop offset="0%" stop-color="#0b3b47" stop-opacity="0.95"/>
+      <stop offset="55%" stop-color="#04141a" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#02080a" stop-opacity="1"/>
+    </radialGradient>
+    <linearGradient id="line" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#5ff2ff"/>
+      <stop offset="55%" stop-color="#b07cff"/>
+      <stop offset="100%" stop-color="#ff5ea8"/>
+    </linearGradient>
+    <linearGradient id="text" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#e8fff6"/>
+      <stop offset="100%" stop-color="#9ff7ff"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="300" fill="url(#glow)"/>
+  <g fill="none" stroke="url(#line)" stroke-opacity="0.85">
+    <ellipse cx="905" cy="150" rx="205" ry="245" stroke-width="1.4" stroke-dasharray="3 7"/>
+    <ellipse cx="905" cy="150" rx="168" ry="205" stroke-width="1.1" stroke-dasharray="14 10" stroke-opacity="0.65"/>
+    <ellipse cx="905" cy="150" rx="132" ry="164" stroke-width="0.9" stroke-opacity="0.45"/>
+    <circle cx="905" cy="150" r="86" stroke-width="0.9" stroke-opacity="0.35"/>
+  </g>
+  <g stroke="#5ff2ff" stroke-opacity="0.55" stroke-width="1">
+    <path d="M700 150 L1180 96"/>
+    <path d="M700 168 L1180 168"/>
+    <path d="M704 190 L1180 250"/>
+    <path d="M704 120 L1180 52"/>
+  </g>
+  <g fill="#e8fff6" font-family="ui-monospace, Consolas, 'Cascadia Mono', monospace">
+    <text x="86" y="128" font-size="58" font-weight="700" fill="url(#text)" letter-spacing="4">AGENT OPS</text>
+    <text x="90" y="172" font-size="24" fill="#5ff2ff" letter-spacing="12">/ DISPATCH CENTER</text>
+    <text x="90" y="214" font-size="15" fill="#7aa2ff" letter-spacing="3">LIVE AGENT RUN VISUALIZATION</text>
+    <text x="90" y="238" font-size="13" fill="#3ef0b3" letter-spacing="2">DEEPSEEK HARNESS · WEB UI PLUGIN</text>
+  </g>
+  <g fill="#ffc857" font-family="ui-monospace, Consolas, monospace" font-size="11" letter-spacing="2">
+    <text x="90" y="272">CLICK NODE · DRAG TO ROTATE · WHEEL TO ZOOM</text>
+  </g>
+  <g fill="#5ff2ff" fill-opacity="0.8">
+    <rect x="1010" y="30" width="4" height="4"/>
+    <rect x="1100" y="60" width="3" height="3"/>
+    <rect x="1080" y="240" width="4" height="4"/>
+    <rect x="980" y="270" width="3" height="3"/>
+  </g>
+</svg>

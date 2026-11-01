@@ -1,0 +1,46 @@
+{
+  "name": "@local/dsh-agent-ops",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Agent Ops / Dispatch Center — a live, interactive agent-run visualization plugin for DeepSeek Harness (DSH Web UI): a revolving card corona with particle-ray nozzles, an interactive memory cloud, and a full mission-control HUD fed by the real session event stream.",
+  "license": "MIT",
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "ai-agent",
+    "agent-visualization",
+    "canvas",
+    "dashboard",
+    "react"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/xinranmn-wq/dsh-agent-ops.git"
+  },
+  "homepage": "https://github.com/xinranmn-wq/dsh-agent-ops#readme",
+  "bugs": {
+    "url": "https://github.com/xinranmn-wq/dsh-agent-ops/issues"
+  },
+  "type": "module",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": ["index.js", "client.js", "cordis.patch.yml", "locale/*.json", "icon.svg", "README.md"],
+  "dsh": {
+    "bundle": { "patch": "./cordis.patch.yml" },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": ["@deepseek-ai/dsh-client-ui-slots", "@deepseek-ai/dsh-client-ui-layout"]
+    }
+  },
+  "scripts": {
+    "build": "node build.mjs",
+    "check": "node --check index.js && node --check client.js && node --check src/scene.js && node --check src/hud.js && node --check src/entry.js",
+    "test": "node test-host.mjs && node test-client.mjs"
+  }
+}
