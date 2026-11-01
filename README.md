@@ -127,6 +127,8 @@ node test-client.mjs  # 加载 bundle、渲染 HUD 树、跑场景帧与指针�
 
 欢迎 PR：更漂亮的光冕、更细腻的粒子、更多交互、或者适配新版本 DSH 的 API 变更都可以。
 
+> CI：`docs/ci-example.yml` 是一份 GitHub Actions 配置示例。把它复制到 `.github/workflows/verify.yml` 即可在每次 push/PR 时自动做语法检查、构建一致性校验和两套冒烟测试（通过网页上传 `.github/workflows/` 下的文件即可，无需本地仓库权限）。
+
 ## 自定义
 
 想调手感，主要旋钮都在 `src/scene.js` 顶部/附近：
